@@ -1,8 +1,20 @@
+$background-blue: #011049;
+
+@mixin section-centering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 40%;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: whitesmoke;
+    background-color: $background-blue;
 }
 
 header {
@@ -14,18 +26,12 @@ header {
     padding: 20px;
     img {
         border-radius: 50%;
-        width: 8.5%;
+        width: 8.25%;
     }
     .text-content {
-        position: relative;
-        left: 36.5%;
         text-align: center;
+        margin: 0 auto;
     }
-
-}
-
-h1 {
-    margin: 0;
 }
 
 .about,
@@ -35,6 +41,10 @@ h1 {
     padding: 20px;
     width: 90%;
     text-align: center;
+    height: 75vh;
+    h2 {
+        color: #1640D6;
+    }
     ul {
         margin: 0;
         padding: 0;
@@ -43,6 +53,10 @@ h1 {
         list-style: none;
         margin-bottom: 12px;
     }
+    .section-text-container {
+        @include section-centering();
+    }
+
 }
 
 section {
@@ -59,5 +73,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 2rem;
 }

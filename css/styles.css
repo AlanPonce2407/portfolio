@@ -2,7 +2,9 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: whitesmoke;
+  background-color: #011049; }
 
 header {
   display: flex;
@@ -13,14 +15,10 @@ header {
   padding: 20px; }
   header img {
     border-radius: 50%;
-    width: 8.5%; }
+    width: 8.25%; }
   header .text-content {
-    position: relative;
-    left: 36.5%;
-    text-align: center; }
-
-h1 {
-  margin: 0; }
+    text-align: center;
+    margin: 0 auto; }
 
 .about,
 .skills,
@@ -28,7 +26,12 @@ h1 {
   margin: 2rem auto;
   padding: 20px;
   width: 90%;
-  text-align: center; }
+  text-align: center;
+  height: 75vh; }
+  .about h2,
+  .skills h2,
+  .projects h2 {
+    color: #1640D6; }
   .about ul,
   .skills ul,
   .projects ul {
@@ -39,6 +42,14 @@ h1 {
   .projects li {
     list-style: none;
     margin-bottom: 12px; }
+  .about .section-text-container,
+  .skills .section-text-container,
+  .projects .section-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 40%; }
 
 section {
   border: 1px solid #ddd;
@@ -52,5 +63,4 @@ footer {
   padding: 10px;
   position: relative;
   bottom: 0;
-  width: 100%;
-  margin-top: 2rem; }
+  width: 100%; }

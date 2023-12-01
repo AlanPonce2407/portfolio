@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Barlow', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +8,7 @@ body {
 
 header {
   display: flex;
+  font-weight: bold;
   align-items: center;
   background-color: #333;
   color: #fff;
@@ -27,7 +28,7 @@ header {
   padding: 20px;
   width: 90%;
   text-align: center;
-  height: 75vh; }
+  height: 50vh; }
   .about h2,
   .skills h2,
   .projects h2 {
@@ -49,7 +50,16 @@ header {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 40%; }
+    top: 20%; }
+
+.main-container .about,
+.main-container .projects {
+  margin-left: 50%;
+  width: 40%; }
+
+.main-container .skills {
+  margin-right: 50%;
+  width: 40%; }
 
 section {
   border: 1px solid #ddd;

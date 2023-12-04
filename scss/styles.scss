@@ -7,6 +7,10 @@ $background-blue: #011049;
     position: relative;
 }
 
+@mixin font-size-general {
+    font-size: 20px;
+}
+
 body {
     font-family: 'Barlow', sans-serif;
     margin: 0;
@@ -45,6 +49,9 @@ header {
     h2 {
         color: #1640D6;
     }
+    p {
+        @include font-size-general()
+    }
     ul {
         margin: 0;
         padding: 0;
@@ -52,6 +59,8 @@ header {
     li {
         list-style: none;
         margin-bottom: 12px;
+        @include font-size-general()
+        
     }
     .section-text-container {
         @include section-centering();

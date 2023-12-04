@@ -33,6 +33,10 @@ header {
   .skills h2,
   .projects h2 {
     color: #1640D6; }
+  .about p,
+  .skills p,
+  .projects p {
+    font-size: 20px; }
   .about ul,
   .skills ul,
   .projects ul {
@@ -42,7 +46,8 @@ header {
   .skills li,
   .projects li {
     list-style: none;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    font-size: 20px; }
   .about .section-text-container,
   .skills .section-text-container,
   .projects .section-text-container {
